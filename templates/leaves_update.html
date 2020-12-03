@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+<tr>
+<th>empid</th>
+  <th>basicpay</th>
+  <th>updateleaves</th>
+</tr>
+{% for rec in emps %}
+<tr>
+  <td>{{ rec.empid}}</td>
+  <td>{{ rec.basicpay}}</td>
+
+<td><a href="./empleavesupdate1?empid={{ rec.empid }}">click here to update leaves</a> </td>
+</tr>
+{%  endfor%}
+</table>
+</body>
+</html>

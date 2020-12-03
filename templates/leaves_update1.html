@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#00ffff">
+<form action="" method="post">
+{% csrf_token %}
+    Empid:<input type="text" value={{empid}} name="eid"><br>
+    basic pay:<input type="text" value={{bp}} name="bp"><br>
+    total no of working days:<input type="text" name="tnwd"><br>
+    total no of paid leaves:<input type="text" name="pl"><br>
+    total no of non paid leaves:<input type="text" name="npl"><br>
+    <input type="submit" value="update">
+</form>
+</body>
+</html>

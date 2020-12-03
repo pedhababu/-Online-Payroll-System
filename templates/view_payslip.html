@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+<tr>
+<th>empid</th>
+  <th>ename</th>
+  <th>company</th>
+    <th>basicpay</th>
+    <th>da</th>
+	<th>hra</th>
+    <th>pf</th>
+    <th>pt</th>
+    <th>tax</th>
+    <th>tsal</th>
+</tr>
+{% for rec in recs %}
+<tr>
+  <td>{{ rec.empid}}</td>
+  <td>{{ rec.empname}}</td>
+  <td>{{ rec.comapny_id }}</td>
+  <td>{{ rec.basicpay }}</td>
+  <td>{{ rec.da }}</td>
+<td>{{ rec.hra}}</td>
+<td>{{ rec.pf }}</td>
+    <td>{{ rec.pt}}</td>
+<td>{{ rec.tax }}</td>
+    <td>{{ rec.tsal }}</td></tr>
+{%  endfor%}
+</table>
+</body>
+</html>
